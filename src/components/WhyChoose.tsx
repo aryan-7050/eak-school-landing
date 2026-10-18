@@ -13,7 +13,7 @@ export function WhyChoose() {
           </h2>
           <p className="mt-4 text-lg text-ink-500">
             Eight reasons families across the city choose EAK for their
-            children - from the early years through to university.
+            children from the early years through to university.
           </p>
         </Reveal>
 
