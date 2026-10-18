@@ -16,7 +16,7 @@ export function Fees() {
           </h2>
           <p className="mt-4 text-lg text-ink-500">
             A simple annual structure with no hidden charges. Sibling and
-            merit-based scholarships are available — ask our admissions team.
+            merit-based scholarships are available ask our admissions team.
           </p>
         </Reveal>
 
