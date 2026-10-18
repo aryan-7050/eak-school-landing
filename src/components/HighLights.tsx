@@ -24,7 +24,7 @@ export function Highlights() {
           </h2>
           <p className="mt-4 text-lg text-white/70">
             Nearly three decades of consistent academic excellence, care, and
-            community — backed by a global alumni network.
+            community backed by a global alumni network.
           </p>
         </Reveal>
 
