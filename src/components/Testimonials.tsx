@@ -11,7 +11,7 @@ export function Testimonials() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
  Loved by parents, trusted with futures</h2>
           <p className="mt-4 text-lg text-ink-500">
-            Real stories from EAK families - the confidence, care, and growth
+            Real stories from EAK families  the confidence, care, and growth
             they ve seen in their children.
           </p>
         </Reveal>
