@@ -396,7 +396,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
       'The teachers genuinely know my daughter. She has grown more confident in two years here than I could have imagined.',
-    name: 'Ananya Deshpande',
+    name: 'Atharv Patil',
     relation: 'Parent of Aarohi, Grade 4',
     avatar:
       'https://images.pexels.com/photos/3890576/pexels-photo-3890576.jpeg?auto=compress&cs=tinysrgb&h=300&w=300',
@@ -405,7 +405,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
       'From the robotics lab to the music room, my son finally looks forward to school every single day. Worth every rupee.',
-    name: 'Rohan Mehta',
+    name: 'Rohan Kumbhar',
     relation: 'Parent of Vivaan, Grade 7',
     avatar:
       'https://images.pexels.com/photos/20354887/pexels-photo-20354887.jpeg?auto=compress&cs=tinysrgb&h=300&w=300',
@@ -413,8 +413,8 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      'The admissions process was transparent and warm. The campus visit sealed it for us — you can feel the care in every corner.',
-    name: 'Dr. Kavita Reddy',
+      'The admissions process was transparent and warm. The campus visit sealed it for us you can feel the care in every corner.',
+    name: 'Dr. Kavita Chavan',
     relation: 'Parent of Ishaan, Grade 11',
     avatar:
       'https://images.pexels.com/photos/21642977/pexels-photo-21642977.jpeg?auto=compress&cs=tinysrgb&h=300&w=300',
