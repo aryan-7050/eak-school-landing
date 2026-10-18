@@ -15,8 +15,8 @@ export function Programs() {
             A learning journey for every stage
           </h2>
           <p className="mt-4 text-lg text-ink-500">
-            Four clearly designed stages — from a joyful Primary foundation to
-            streamed Senior Secondary pathways — each with its own purpose and
+            Four clearly designed stages from a joyful Primary foundation to
+            streamed Senior Secondary pathways each with its own purpose and
             care.
           </p>
         </Reveal>
