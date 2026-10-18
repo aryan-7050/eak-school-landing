@@ -11,7 +11,7 @@ export function Process() {
             Five simple steps to enrollment
           </h2>
           <p className="mt-4 text-lg text-ink-500">
-            A clear, transparent process — from your first enquiry to your
+            A clear, transparent process from your first enquiry to your
             childs first day as part of the EAK family.
           </p>
         </Reveal>
