@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+
 import { HIGHLIGHTS, type Stat } from '@/data/content';
 import { Reveal } from './Reveal';
 import { useCountUp, useReveal } from '@/hooks/useReveal';
@@ -19,9 +19,11 @@ export function Highlights() {
           <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white ring-1 ring-white/20">
             School Highlights
           </span>
+
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Numbers that tell our story
           </h2>
+
           <p className="mt-4 text-lg text-white/70">
             Nearly three decades of consistent academic excellence, care, and
             community backed by a global alumni network.
@@ -42,15 +44,21 @@ export function Highlights() {
 
 function StatCard({ stat }: { stat: Stat }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
+
   const numeric = parseInt(stat.value.replace(/[^0-9]/g, ''), 10) || 0;
   const hasSuffix = stat.value.includes('+');
   const hasComma = stat.value.includes(',');
+
   const animated = useCountUp(numeric, visible);
 
   const display = (() => {
     if (numeric === 0) return stat.value;
+
     const num = Math.round(animated);
-    const formatted = hasComma ? num.toLocaleString('en-IN') : String(num);
+    const formatted = hasComma
+      ? num.toLocaleString('en-IN')
+      : String(num);
+
     return formatted + (hasSuffix ? '+' : '');
   })();
 
@@ -62,10 +70,14 @@ function StatCard({ stat }: { stat: Stat }) {
       <span className="grid h-12 w-12 place-items-center rounded-2xl bg-white/10 text-gold-300 ring-1 ring-white/20">
         <stat.icon size={24} />
       </span>
+
       <p className="mt-5 font-display text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
         {display}
       </p>
-      <p className="mt-2 text-sm font-medium text-white/70">{stat.label}</p>
+
+      <p className="mt-2 text-sm font-medium text-white/70">
+        {stat.label}
+      </p>
     </div>
   );
 }
