@@ -44,8 +44,8 @@ export function Hero() {
               style={{ animationDelay: '80ms' }}
             >
               {SCHOOL.name} invites families to apply for{' '}
-              {SCHOOL.session}. World-class faculty, future-ready skills, and a
-              caring campus — designed to help every child thrive.
+              {SCHOOL.session}. World-class faculty, future ready skills, and a
+              caring campus designed to help every child thrive.
             </p>
 
             <div
