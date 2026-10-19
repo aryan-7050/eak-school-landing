@@ -1,158 +1,131 @@
 # EAK International School — Admissions Landing Page
 
-A high-quality, fully responsive **admissions landing page** for the fictional
-**EAK International School**, built for the academic session **2027–28**.
+A modern, responsive admissions landing page for the fictional **EAK International School**, designed for the academic session **2027–28**.
 
-> **Inform → Build Trust → Answer Questions → Encourage Admission Enquiry**
+**Inform → Build Trust → Answer Questions → Encourage Admission Enquiry**
 
-This is a **frontend-only** project. All content is hard-coded, all
-interactions run in the browser, and no backend, database, authentication, or
-real form submission is used — exactly as the assignment specifies.
+## Live Preview
 
----
+**Live Website:** https://eak-school-landing.vercel.app/
 
-## Table of contents
+**GitHub Repository:** https://github.com/aryan-7050/eak-school-landing
 
-1. [Live preview](#live-preview)
-2. [Sections implemented](#sections-implemented)
-3. [Working interactions](#working-interactions)
-4. [Tech stack & libraries](#tech-stack--libraries)
-5. [Getting started](#getting-started)
-6. [Available scripts](#available-scripts)
-7. [Project structure](#project-structure)
-8. [Imagery & assets](#imagery--assets)
-9. [Responsive & accessibility notes](#responsive--accessibility-notes)
-10. [Design system](#design-system)
-11. [Notes & disclaimers](#notes--disclaimers)
+Explore the deployed website to view the admissions landing page and its frontend interactions.
 
----
+## Sections Implemented
 
-## Live preview
+All 12 required sections are included in the landing page:
 
-Run the project locally with `npm run dev` and open the URL printed in the
-terminal (typically `http://localhost:5173`).
+| # | Section | Description |
+|---|---|---|
+| 01 | Hero | School introduction, Admissions Open announcement, academic session and primary CTAs |
+| 02 | Why Choose EAK | Eight school differentiators covering academics, faculty, safety and development |
+| 03 | Academic Programs | Primary, Middle, Secondary and Senior Secondary levels |
+| 04 | School Highlights | Four sample statistics highlighting school achievements |
+| 05 | Facilities | Eight visual cards showcasing school facilities |
+| 06 | Admission Process | Five steps from enquiry to enrollment |
+| 07 | Important Dates | Five sample admission milestones |
+| 08 | Required Documents | Checklist of documents needed for admission |
+| 09 | Fee Information | Responsive fee table and mobile-friendly fee cards |
+| 10 | Parent Testimonials | Four sample testimonials with ratings |
+| 11 | FAQ | Six frequently asked questions with expandable answers |
+| 12 | Final Call to Action | Apply Now, Book a Campus Visit and Talk to Admissions |
 
----
+## Working Interactions
 
-## Sections implemented
+- **Apply Now / Enquire Now:** Opens a frontend-only enquiry modal.
+- **Enquiry Form:** Collects sample parent and student details and displays a confirmation message.
+- **Schedule a Visit / Book a Campus Visit:** Navigates to the admission process section.
+- **Talk to Admissions:** Uses a `tel:` link to initiate a phone call.
+- **FAQ Accordion:** Expands and collapses answers.
+- **Sticky Navigation:** Changes appearance on scroll and highlights the active section.
+- **Mobile Navigation:** Provides a collapsible navigation drawer.
+- **Scroll Animations:** Reveals sections and cards as they enter the viewport.
+- **Animated Statistics:** Counts up the school highlight numbers when they become visible.
 
-All 12 required sections are delivered on a single, cohesive landing page:
+All interactions are frontend-only. No real admission data is submitted or stored.
 
-| #   | Section                | What it contains                                                                                              |
-| --- | ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 01  | Hero                   | School name, "Admissions Open", academic session, value proposition, and Apply / Schedule a Visit / Enquire. |
-| 02  | Why choose this school | 8 differentiators (faculty, results, infrastructure, holistic development, safety, technology, ratio, skills). |
-| 03  | Academic programs      | Primary, Middle, Secondary, and Senior Secondary — class/age range, description, and key features.            |
-| 04  | School highlights      | 4 animated credibility statistics (years, alumni, faculty, activities).                                        |
-| 05  | Facilities             | Visual grid of 8 facilities with real photography and icons.                                                  |
-| 06  | Admission process      | A clear 5-step numbered flow: Enquiry → Application → Assessment → Selection → Enrollment.                     |
-| 07  | Important dates        | 5 date cards covering the full admission cycle.                                                                |
-| 08  | Required documents     | A readable checklist with check icons and a tip callout.                                                       |
-| 09  | Fee information        | Responsive fee table (desktop) / cards (mobile) for the three grade ranges, plus inclusion notes.             |
-| 10  | Parent testimonials    | 4 parent testimonials with avatars and star ratings.                                                          |
-| 11  | FAQ                    | 6 questions in an accessible accordion with smooth expand/collapse.                                           |
-| 12  | Final call to action   | "Give your child a future-ready education" with Apply, Book a Campus Visit, and Talk to Admissions.           |
+## Tech Stack & Libraries
 
----
+| Technology | Purpose |
+|---|---|
+| React | Component-based user interface |
+| TypeScript | Type-safe application development |
+| Vite | Development server and production build |
+| Tailwind CSS | Responsive styling and utility classes |
+| lucide-react | Icons |
+| Google Fonts | Plus Jakarta Sans and Inter typography |
 
-## Working interactions
+For exact dependency versions and available scripts, refer to `package.json`.
 
-All calls-to-action do something meaningful on click — nothing is a dead link.
-
-- **Apply Now / Enquire Now** — opens a frontend-only enquiry modal with a
-  form. Submitting shows a success confirmation with the parent's name. No
-  data is stored or sent.
-- **Schedule a Visit / Book a Campus Visit** — smooth-scrolls to the
-  Admission Process section.
-- **Talk to Admissions / phone links** — initiate a `tel:` call to the
-  school's admissions number.
-- **FAQ accordion** — click any question to expand/collapse its answer with a
-  smooth height animation; only one stays open at a time.
-- **Sticky header** — transparent over the hero, turns solid white on scroll,
-  with scroll-spy active-link highlighting and a slide-down mobile drawer.
-- **Scroll-reveal animations** — sections and cards fade up gently as they
-  enter the viewport.
-- **Animated count-up statistics** — the highlights numbers count up when
-  scrolled into view.
-- **Mobile menu** — a toggle drawer for navigation on small screens.
-
----
-
-## Tech stack & libraries
-
-| Tool                | Purpose                                            |
-| ------------------- | -------------------------------------------------- |
-| **React 18**        | UI library                                         |
-| **TypeScript**      | Type-safe JavaScript                               |
-| **Vite**            | Dev server & build tool                            |
-| **Tailwind CSS 3**  | Utility-first styling with a custom design system  |
-| **lucide-react**    | Icon set                                           |
-| **Google Fonts**    | Plus Jakarta Sans (display) + Inter (body)         |
-
-No backend, database, API integration, authentication, or real form
-submission is used — the project is frontend-only by design.
-
----
-
-## Getting started
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js 18+** and npm (comes with Node)
+- Node.js 18 or later
+- npm
 
-### Install & run
+### Installation
+
+Clone the repository and navigate to the project directory:
 
 ```bash
-# 1. install dependencies
+git clone https://github.com/aryan-7050/eak-school-landing.git
+cd eak-school-landing
+```
+
+Install the dependencies:
+
+```bash
 npm install
-
-# 2. start the dev server
-npm run dev
-
-# 3. open the printed URL in your browser
-#    (typically http://localhost:5173)
 ```
 
-### Build for production
+Start the development server:
 
 ```bash
-npm run build     # outputs to dist/
-npm run preview   # preview the production build locally
+npm run dev
 ```
 
----
+Open the local URL printed in the terminal, typically `http://localhost:5173`.
 
-## Available scripts
+### Production Build
 
-| Script              | What it does                                  |
-| ------------------- | ---------------------------------------------- |
-| `npm run dev`       | Start the Vite dev server with hot reload.     |
-| `npm run build`     | Type-check-free production build to `dist/`.   |
-| `npm run preview`   | Serve the production build locally.            |
-| `npm run typecheck` | Run `tsc --noEmit` to check types.             |
-| `npm run lint`      | Run ESLint over the project.                   |
+Build the application:
 
----
-
-## Project structure
-
+```bash
+npm run build
 ```
-project/
-├── index.html              # HTML entry, fonts, meta tags
-├── package.json            # Dependencies & scripts
-├── tailwind.config.js      # Custom color ramps, fonts, animations
-├── vite.config.ts          # Vite config + @/ path alias
-├── README.md               # This file
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Run lint checks if the script is available:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+eak-school-landing/
+├── index.html
+├── package.json
+├── vite.config.ts
+├── README.md
 └── src/
-    ├── App.tsx             # Page composition (all sections in order)
-    ├── main.tsx            # React entry point
-    ├── index.css           # Tailwind base + design system utilities
-    ├── components/         # One file per section + shared UI
+    ├── App.tsx
+    ├── main.tsx
+    ├── index.css
+    ├── components/
     │   ├── Header.tsx
     │   ├── Hero.tsx
     │   ├── WhyChoose.tsx
     │   ├── Programs.tsx
-    │   ├── Highlights.tsx
+    │   ├── HighLights.tsx
     │   ├── Facilities.tsx
     │   ├── Process.tsx
     │   ├── DatesAndDocs.tsx
@@ -161,71 +134,68 @@ project/
     │   ├── Faq.tsx
     │   ├── FinalCta.tsx
     │   ├── Footer.tsx
-    │   ├── Modal.tsx           # Accessible modal (portal + Esc + scroll lock)
-    │   ├── EnquiryForm.tsx     # Frontend-only form with success state
-    │   ├── EnquiryProvider.tsx # Context so any CTA can open the modal
-    │   └── Reveal.tsx          # Scroll-reveal wrapper
+    │   ├── Modal.tsx
+    │   ├── EnquiryForm.tsx
+    │   ├── EnquiryProvider.tsx
+    │   └── Reveal.tsx
     ├── data/
-    │   └── content.ts      # All hard-coded page content (single source of truth)
+    │   └── content.ts
     └── hooks/
-        └── useReveal.ts    # useReveal, useCountUp, useScrollSpy, useScrolled
+        └── useReveal.ts
 ```
 
-All page content — school details, programs, fees, dates, testimonials, FAQs —
-lives in **`src/data/content.ts`**, so you can edit the text in one place
-without touching the components.
+The project uses reusable React components to organize the landing page into manageable sections. Shared page content is maintained in `src/data/content.ts`.
 
----
+*Note: The structure above reflects the documented project layout. Check the repository if any files have been renamed or moved.*
 
-## Imagery & assets
+## Imagery & Assets
 
-- All photography is sourced from **Pexels** (royalty-free, license-free) and
-  loaded directly from Pexels CDN URLs.
-- **No local image assets are required** to run the page — everything works
-  out of the box once dependencies are installed.
-- Icons are from **lucide-react** and bundled with the app.
+- School imagery is sourced from externally hosted Pexels image URLs.
+- Icons are provided by `lucide-react`.
+- External images require an internet connection to load.
+- No backend or local image assets are required for the documented frontend implementation.
 
----
+## Responsive Design & Accessibility
 
-## Responsive & accessibility notes
+The landing page is designed for mobile, tablet and desktop screens.
 
-- **Responsive** across mobile, tablet, and desktop with Tailwind breakpoints
-  (`sm`, `md`, `lg`, `xl`). The fee table collapses to cards on mobile, the
-  header collapses to a drawer, and all grids reflow.
-- **Accessible** basics:
-  - Semantic landmarks (`header`, `main`, `footer`, `nav`, `section`).
-  - A "Skip to content" link for keyboard users.
-  - Visible focus rings on all interactive elements.
-  - The enquiry modal traps attention, closes on `Esc`, and uses
-    `role="dialog"` + `aria-modal`.
-  - FAQ accordion buttons use `aria-expanded`.
-  - All images have descriptive `alt` text.
-  - Sufficient color contrast on light and dark backgrounds.
+Key considerations include:
 
----
+- Responsive grids and layouts.
+- Mobile navigation.
+- Mobile-friendly fee cards.
+- Semantic HTML landmarks.
+- Keyboard focus indicators.
+- Descriptive image alternative text.
+- Accessible FAQ controls.
+- Modal dialog semantics and keyboard dismissal.
 
-## Design system
+Actual accessibility and responsive behavior should be verified in the deployed application.
 
-Defined in `tailwind.config.js` and `src/index.css`:
+## Design System
 
-- **Color ramps:** `brand` (blue), `ink` (neutral), `gold` (accent),
-  `success`, `warning`, `error` — each with multiple shades.
-- **Typography:** Plus Jakarta Sans for headings, Inter for body, with
-  balanced line spacing (150% body, ~110% headings).
-- **Spacing:** 8px-based scale via Tailwind defaults.
-- **Components:** reusable `.btn`, `.btn-primary`, `.btn-secondary`,
-  `.btn-ghost`, `.card`, `.section-eyebrow`, and `.chip` classes.
-- **Motion:** custom keyframes for `fade-up`, `fade-in`, `float-slow`, and a
-  `reveal` utility for scroll-triggered animations.
+The interface uses a consistent visual system with:
 
----
+- Blue primary colors and neutral backgrounds.
+- Gold accent colors.
+- Plus Jakarta Sans headings and Inter body text.
+- Reusable buttons, cards and section labels.
+- Consistent spacing and responsive layouts.
+- Subtle animations and transitions.
 
-## Notes & disclaimers
+## Assignment Scope
 
-- **EAK International School is fictional.** All statistics, dates, fees,
-  testimonials, and contact details are sample/dummy data, as permitted by
-  the assignment.
-- The enquiry form **simulates** submission with a short delay and shows a
-  confirmation message — no data leaves the browser.
-- This project was built as a second-round hiring assignment for
-  **EAK Pustak Pvt. Ltd.** (Project 02 — School Admissions Landing Page).
+This project was developed for the **EAK Pustak Pvt. Ltd. — Second-Round Hiring Assignment, Project 02: School Admissions Landing Page**.
+
+The assignment permits hard-coded sample content and frontend-only interactions. Therefore:
+
+- No backend or database is required.
+- No authentication or API integration is implemented.
+- Enquiry submission is simulated in the browser.
+- Statistics, fees, dates, testimonials and contact details are fictional sample data.
+
+## Author & Project Links
+
+- **Live Demo:** https://eak-school-landing.vercel.app/
+- **Source Code:** https://github.com/aryan-7050/eak-school-landing
+
